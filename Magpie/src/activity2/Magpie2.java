@@ -41,13 +41,27 @@ public class Magpie2
 		{
 			response = "Why so negative?";
 		}
-		else if (statement.indexOf("mother") >= 0
-				|| statement.indexOf("father") >= 0
-				|| statement.indexOf("sister") >= 0
-				|| statement.indexOf("brother") >= 0)
+		else if (statement.indexOf("cat") >= 0
+				|| statement.indexOf("dog") >= 0)
+				//|| statement.indexOf("sister") >= 0
+				//|| statement.indexOf("brother") >= 0)
 		{
-			response = "Tell me more about your family.";
+			response = "Tell me more about your pets.";
 		}
+                else if (statement.indexOf("Mr. Tholking") >= 0)
+                {
+                    response = "He sounds like a good teacher.";
+                }
+                else if (statement.indexOf("food") >= 0
+                        || statement.indexOf("yes") >= 0
+                        || statement.indexOf("please") >= 0)
+                {
+                    response = "Nobody cares";
+                }
+                else if(statement.indexOf(statement.trim()))
+                {
+                    if
+                }
 		else
 		{
 			response = getRandomResponse();
